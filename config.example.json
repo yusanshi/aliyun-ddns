@@ -10,7 +10,7 @@
       "new_record": {
         "rr": "@",
         "type": "A",
-        "value": "IPV4_INTERFACE#eth0",
+        "value": "IPV4_ONLINE#",
         "line": "default"
       }
     },
@@ -19,7 +19,7 @@
       "new_record": {
         "rr": "www",
         "type": "A",
-        "value": "IPV4_INTERFACE#eth0",
+        "value": "IPV4_ONLINE#",
         "line": "default"
       }
     }
