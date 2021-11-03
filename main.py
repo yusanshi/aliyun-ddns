@@ -96,6 +96,10 @@ if __name__ == '__main__':
                     f"ip -4 a show {ip_parameter} | grep -Po 'inet \K[0-9.]*'",
                     shell=True,
                     text=True).strip()
+            elif ip_type == 'IPV4_ONLINE':
+                ip = subprocess.check_output("curl -s ifconfig.me",
+                                             shell=True,
+                                             text=True).strip()
             else:
                 raise NotImplementedError
             config['operations'][index]['new_record']['value'] = ip
