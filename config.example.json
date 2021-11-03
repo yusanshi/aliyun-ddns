@@ -1,0 +1,27 @@
+{
+  "authentication": {
+    "access_key": "<access key>",
+    "access_secret": "<access secret>"
+  },
+  "domain": "example.com",
+  "operations": [
+    {
+      "type": "update",
+      "new_record": {
+        "rr": "@",
+        "type": "A",
+        "value": "IPV4_INTERFACE#eth0",
+        "line": "default"
+      }
+    },
+    {
+      "type": "update",
+      "new_record": {
+        "rr": "www",
+        "type": "A",
+        "value": "IPV4_INTERFACE#eth0",
+        "line": "default"
+      }
+    }
+  ]
+}
